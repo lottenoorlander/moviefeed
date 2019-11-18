@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="container">
-      <Navbar href="wwww.imdb.com" />
+      <Navbar href="wwww.imdb.com/" />
       <header className="App-header"></header>
     </div>
   );
