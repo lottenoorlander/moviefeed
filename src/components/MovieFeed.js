@@ -1,21 +1,28 @@
 import React, { Component } from "react";
-import Spinner from "";
-import Crying from "";
+import Spinner from "../spinner.gif";
+import Crying from "../Crying.gif";
 import Card from "./Card";
 
 class MovieFeed extends Component {
   state = {
     loading: true,
-    error: null
+    error: null,
+    movies: null
   };
 
   componentDidMount() {
     fetch(
       "http://www.omdbapi.com/?apikey=1a5bf8e0&s=christmas&y=2019&type=movie&page=1"
     )
-      .then(response => response.json())
-      .then(json => this.setState({ loading: false, movies: json }))
-      .catch(this.setState({ loading: false, error: true }));
+      .then(response => {
+        return response.json();
+      })
+      .then(json => {
+        return this.setState({ loading: false, movies: json.Search });
+      })
+      .catch(error => {
+        return this.setState({ loading: false, error: true });
+      });
   }
 
   render() {
@@ -27,7 +34,13 @@ class MovieFeed extends Component {
       return (
         <div>
           {this.state.movies.map(movie => (
-            <Card />
+            <Card
+              key={movie.Title}
+              title={movie.Title}
+              imageUrl={movie.Poster}
+              alt={movie.Title}
+              releaseDate={movie.Year}
+            />
           ))}
         </div>
       );
