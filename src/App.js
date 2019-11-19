@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import FeaturedMovie from "./components/FeaturedMovie";
 
 function App() {
   return (
     <div className="container">
-      <Navbar href="wwww.imdb.com/" />
-      <header className="App-header"></header>
+      <Navbar />
+      <header className="App-header">
+        <FeaturedMovie />
+      </header>
     </div>
   );
 }
