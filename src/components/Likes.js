@@ -8,55 +8,37 @@ export default class Likes extends Component {
     liked: false
   };
 
-  toggleHeart = () => {
-    if (this.state.liked === false) {
-      this.setState({
-        numLikes: this.state.numLikes + 1,
-        liked: true
-      });
-    } else if (this.state.liked === true) {
-      this.setState({
-        numLikes: this.state.numLikes - 1,
-        liked: false
-      });
-    }
+  increment = () => {
+    this.setState({
+      numLikes: this.state.numLikes + 1,
+      liked: true
+    });
   };
 
-  // increment = () => {
-  //   this.setState({
-  //     numLikes: this.state.numLikes + 1,
-  //     liked: true
-  //   });
-  // };
-
-  // decrement = () => {
-  //   this.setState({
-  //     numLikes: this.state.numLikes - 1,
-  //     liked: false
-  //   });
-  // };
+  decrement = () => {
+    this.setState({
+      numLikes: this.state.numLikes - 1,
+      liked: false
+    });
+  };
 
   render() {
     console.log(this.state);
     return (
       <div className="wrapper-for-icons">
-        <img src={this.props.imageUrl} alt={this.props.imageAlt} />
-
-        <img className="likeButton" onclick={this.toggleHeart} alt="heart" />
-
         {this.state.liked ? (
           <img
             className="likeButton"
-            onClick={this.increment}
+            onClick={this.decrement}
             src={HeartFilled}
-            alt="unliked"
+            alt="liked"
           />
         ) : (
           <img
             className="likeButton"
-            onClick={this.decrement}
+            onClick={this.increment}
             src={HeartOutline}
-            alt="liked"
+            alt="unliked"
           />
         )}
         <span>{this.state.numLikes}</span>
