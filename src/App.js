@@ -13,8 +13,6 @@ function App() {
       <header className="App-header">
         <FeaturedMovie />
       </header>
-      <Navbar href="wwww.imdb.com/" />
-      <header className="App-header"></header>
       <MovieFeed />
       <Likes />
       <AddMovie />
