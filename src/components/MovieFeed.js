@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Spinner from "../spinner.gif";
 import Crying from "../Crying.gif";
 import Card from "./Card";
+import "./MovieFeed.css";
 
 class MovieFeed extends Component {
   state = {
@@ -32,7 +33,7 @@ class MovieFeed extends Component {
       return <div>{<img src={Crying} alt="error message" />}</div>;
     } else {
       return (
-        <div>
+        <div className="moviefeed">
           {this.state.movies.map(movie => (
             <Card
               key={movie.Title}

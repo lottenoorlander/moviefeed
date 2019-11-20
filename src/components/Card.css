@@ -3,6 +3,8 @@
   height: 455px;
   display: block;
   position: relative;
+  margin: 50px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .moviePoster {
@@ -17,6 +19,7 @@
   left: 0;
   color: white;
   display: none;
+  margin: 10px;
 }
 
 .like {
@@ -26,6 +29,7 @@
   right: 0;
   color: white;
   display: none;
+  margin: 10px;
 }
 
 .movieCard:hover:after {
