@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="25px" viewBox="0 0 29 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>heart-outline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BNNVARA-Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-71.000000, -121.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#3B3B3B" stroke-width="2.5">
+            <path d="M96.0658333,124.881988 C94.7763889,123.627329 93.0863889,123 91.3961111,123 C89.7061111,123 88.0161111,123.627329 86.7266667,124.881988 L85.5,126.075562 L84.2733333,124.881988 C82.9838889,123.627329 81.2938889,123 79.6038889,123 C77.9136111,123 76.2236111,123.627329 74.9341667,124.881988 C72.3552778,127.391304 72.3552778,131.45989 74.9341667,133.969207 L85.5,144.25 L96.0658333,133.969207 C98.6447222,131.45989 98.6447222,127.391304 96.0658333,124.881988" id="heart-outline"></path>
+        </g>
+    </g>
+</svg>
