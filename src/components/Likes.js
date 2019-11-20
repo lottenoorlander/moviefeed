@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import HeartFilled from "../images/heart-filled.svg";
 import HeartOutline from "../images/heart-outline.svg";
+import Comment from "./Comment";
 
 export default class Likes extends Component {
   state = {
@@ -42,6 +43,7 @@ export default class Likes extends Component {
           />
         )}
         <span>{this.state.numLikes}</span>
+        <Comment addComment={this.addComment} />
       </div>
     );
   }
