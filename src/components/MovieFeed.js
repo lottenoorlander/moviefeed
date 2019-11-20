@@ -12,7 +12,7 @@ class MovieFeed extends Component {
 
   componentDidMount() {
     fetch(
-      "http://www.omdbapi.com/?apikey=1a5bf8e0&s=christmas&y=2019&type=movie&page=1"
+      "http://www.omdbapi.com/?apikey=1a5bf8e0&s=christmas&y=2018&type=movie&page=1"
     )
       .then(response => {
         return response.json();

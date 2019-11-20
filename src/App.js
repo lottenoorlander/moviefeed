@@ -11,7 +11,6 @@ function App() {
       <Navbar href="wwww.imdb.com/" />
       <header className="App-header"></header>
       <MovieFeed />
-      <Likes />
       <AddMovie />
     </div>
   );
