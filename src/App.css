@@ -25,6 +25,18 @@
 	color: white;
 }
 
-.counter {
-	color: red;
+.wrapper-for-icons {
+	display: flex;
+}
+
+.wrapper-for-icons span {
+	font-size: 18px;
+	margin-left: 10px;
+	display: inline-flex;
+
+}
+
+.likeButton {
+	cursor: pointer;
+	display: inline-flex;
 }
