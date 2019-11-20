@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="29px" height="25px" viewBox="0 0 29 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="27px" height="24px" viewBox="0 0 27 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
-    <title>heart-outline</title>
+    <title>path-1</title>
     <desc>Created with Sketch.</desc>
-    <g id="BNNVARA-Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-71.000000, -121.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#3B3B3B" stroke-width="2.5">
-            <path d="M96.0658333,124.881988 C94.7763889,123.627329 93.0863889,123 91.3961111,123 C89.7061111,123 88.0161111,123.627329 86.7266667,124.881988 L85.5,126.075562 L84.2733333,124.881988 C82.9838889,123.627329 81.2938889,123 79.6038889,123 C77.9136111,123 76.2236111,123.627329 74.9341667,124.881988 C72.3552778,127.391304 72.3552778,131.45989 74.9341667,133.969207 L85.5,144.25 L96.0658333,133.969207 C98.6447222,131.45989 98.6447222,127.391304 96.0658333,124.881988" id="heart-outline"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-72.000000, -57.000000)" fill-rule="nonzero" stroke="#D0021B" stroke-width="2">
+            <g id="heart-filled" transform="translate(73.000000, 58.000000)">
+                <path d="M23.0658333,1.881988 C21.7763889,0.627329 20.0863889,0 18.3961111,0 C16.7061111,0 15.0161111,0.627329 13.7266667,1.881988 L12.5,3.075562 L11.2733333,1.881988 C9.9838889,0.627329 8.2938889,0 6.6038889,0 C4.9136111,0 3.2236111,0.627329 1.9341667,1.881988 C-0.6447222,4.391304 -0.6447222,8.45989 1.9341667,10.969207 L12.5,21.25 L23.0658333,10.969207 C25.6447222,8.45989 25.6447222,4.391304 23.0658333,1.881988" id="path-1"></path>
+            </g>
         </g>
     </g>
 </svg>
