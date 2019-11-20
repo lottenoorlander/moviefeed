@@ -1,7 +1,6 @@
-// src/components/ArticleCard.js
-import React from "react";
+import React, { Component } from "react";
 
-export default class Card extends React.Component {
+class Card extends Component {
   render() {
     return (
       <div>
@@ -12,3 +11,5 @@ export default class Card extends React.Component {
     );
   }
 }
+
+export default Card;
