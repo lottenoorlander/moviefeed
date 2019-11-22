@@ -10,12 +10,12 @@ import { Route } from "react-router-dom";
 function App() {
   return (
     <div className="container">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <header className="App-header"></header> */}
       <main>
         <Route exact path="/" component={(FeaturedMovie, MovieFeed)} />
         <Route path="/detailpage/:movieId" component={DetailPageContainer} />
-        {/* <AddMovie /> */}
+        <AddMovie />
       </main>
     </div>
   );
