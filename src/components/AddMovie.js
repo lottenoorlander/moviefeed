@@ -19,13 +19,13 @@ class AddMovie extends Component {
   render() {
     return (
       <div className="add-movie">
-        <form onSubmit={this.handleSubmit.bind(this)}>
+        <form onSubmit={this.handleSubmit}>
           <label>
             Movie
             <input
               type="text"
               name="name"
-              onChange={this.handleChange.bind(this)}
+              onChange={this.handleChange}
               value={this.state.movie}
             />
           </label>
