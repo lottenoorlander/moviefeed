@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import FeaturedMovie from "./components/FeaturedMovie";
-import MovieFeed from "./components/MovieFeed";
 import Likes from "./components/Likes";
 import AddMovie from "./components/AddMovie";
 
@@ -13,7 +12,7 @@ function App() {
       <header className="App-header">
         <FeaturedMovie />
       </header>
-      <MovieFeed />
+      <Likes />
       <AddMovie />
     </div>
   );
