@@ -24,7 +24,7 @@ export default class Likes extends Component {
   };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="wrapper-for-icons">
         {this.state.liked ? (

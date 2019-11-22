@@ -3,6 +3,8 @@ import Spinner from "../spinner.gif";
 import Crying from "../Crying.gif";
 import Card from "./Card";
 import "./MovieFeed.css";
+import FeaturedMovie from "./FeaturedMovie";
+import Header from "./Header";
 
 class MovieFeed extends Component {
   state = {
@@ -33,16 +35,20 @@ class MovieFeed extends Component {
       return <div>{<img src={Crying} alt="error message" />}</div>;
     } else {
       return (
-        <div className="moviefeed">
-          {this.state.movies.map(movie => (
-            <Card
-              key={movie.Title}
-              title={movie.Title}
-              imageUrl={movie.Poster}
-              alt={movie.Title}
-              releaseDate={movie.Year}
-            />
-          ))}
+        <div>
+          <FeaturedMovie />
+          <div className="moviefeed">
+            {this.state.movies.map(movie => (
+              <Card
+                key={movie.imdbID}
+                title={movie.Title}
+                imageUrl={movie.Poster}
+                alt={movie.Title}
+                releaseDate={movie.Year}
+                movieId={movie.imdbID}
+              />
+            ))}
+          </div>
         </div>
       );
     }

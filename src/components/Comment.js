@@ -9,11 +9,11 @@ class Comment extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.addComment(this.state.comment);
-    console.log(`Submitting form... ${this.state.comment}`);
+    // console.log(`Submitting form... ${this.state.comment}`);
   }
 
   handleChange = event => {
-    console.log(`handleChange ${this.state.comment}`);
+    // console.log(`handleChange ${this.state.comment}`);
 
     this.setState({
       [event.target.comment]: event.target.value

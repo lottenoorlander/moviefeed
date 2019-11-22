@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Likes from "./Likes";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 class Card extends Component {
   render() {
@@ -12,7 +13,12 @@ class Card extends Component {
           alt={this.props.alt}
         />
         <div className="titleDate">
-          <h2>{this.props.title}</h2>
+          <h2>
+            <Link to={`detailpage/${this.props.movieId}`}>
+              {this.props.title}
+            </Link>
+          </h2>
+
           <span>{this.props.releaseDate}</span>
         </div>
         <div className="like">
