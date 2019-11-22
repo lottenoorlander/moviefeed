@@ -12,20 +12,25 @@ class AddMovie extends Component {
 
   handleChange = event => {
     this.setState({
-      [event.target.movie]: event.target.value
+      movie: event.target.value
     });
   };
 
   render() {
     return (
       <div className="add-movie">
-        <form onSubmit={this.handleSubmit.bind(this)}>
+        <form onSubmit={this.handleSubmit}>
           <label>
             Movie
             <input
               type="text"
-              name="name"
+<<<<<<< HEAD
+              name="movie"
               onChange={this.handleChange.bind(this)}
+=======
+              name="name"
+              onChange={this.handleChange}
+>>>>>>> 3b8e1f565d1265584dfe661af9993e3e8e3e4c85
               value={this.state.movie}
             />
           </label>

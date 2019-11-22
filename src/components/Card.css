@@ -23,12 +23,12 @@
 }
 
 .like {
-  /* position: absolute; */
-  /* z-index: 1; */
+  position: absolute;
+  z-index: 1;
   bottom: 0;
   right: 0;
-  color: black;
-  /* display: none; */
+  color: white;
+  display: none;
   margin: 10px;
 }
 
@@ -43,11 +43,15 @@
   width: 100%;
 }
 
-.movieCard:hover {
+.movieCard:hover .like {
   display: inline-block;
 }
 
 .movieCard:hover .titleDate {
   display: inline-block;
-  color: black;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }

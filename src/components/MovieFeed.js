@@ -4,12 +4,14 @@ import Crying from "../Crying.gif";
 import Card from "./Card";
 import "./MovieFeed.css";
 import FeaturedMovie from "./FeaturedMovie";
+import AddMovie from "./AddMovie";
 
 class MovieFeed extends Component {
   state = {
     loading: true,
     error: null,
-    movies: null
+    movies: null,
+    search: null
   };
 
   componentDidMount() {
@@ -26,6 +28,25 @@ class MovieFeed extends Component {
         return this.setState({ loading: false, error: true });
       });
   }
+
+  addMovie = movie => {
+    this.setState({ ...this.state, search: movie });
+    if (this.state.search) {
+      fetch(
+        `http://www.omdbapi.com/?apikey=1a5bf8e0&s=${encodeURIComponent(
+          this.state.search
+        )}&type=movie&page=1`
+      )
+        .then(res => res.json())
+        .then(json => {
+          this.setState({
+            movies: this.state.movies.concat(json.Search)
+          });
+        })
+        .catch(console.error);
+    }
+    // this.setState({ ...this.state, search: null });
+  };
 
   render() {
     if (this.state.loading) {
@@ -47,6 +68,7 @@ class MovieFeed extends Component {
                 movieId={movie.imdbID}
               />
             ))}
+            <AddMovie addMovie={this.addMovie} />
           </div>
         </div>
       );
