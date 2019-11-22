@@ -8,12 +8,13 @@ import AddMovie from "./components/AddMovie";
 function App() {
   return (
     <div className="container">
-      <Navbar />
-      <header className="App-header">
-        <FeaturedMovie />
-      </header>
-      <Likes />
-      <AddMovie />
+      {/* <Navbar /> */}
+      {/* <header className="App-header"></header> */}
+      <main>
+        <Route exact path="/" component={(FeaturedMovie, MovieFeed)} />
+        <Route path="/detailpage/:movieId" component={DetailPageContainer} />
+        <AddMovie />
+      </main>
     </div>
   );
 }
