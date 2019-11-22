@@ -4,7 +4,6 @@ import Crying from "../Crying.gif";
 import Card from "./Card";
 import "./MovieFeed.css";
 import FeaturedMovie from "./FeaturedMovie";
-import Header from "./Header";
 
 class MovieFeed extends Component {
   state = {

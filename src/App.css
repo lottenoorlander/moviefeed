@@ -49,18 +49,25 @@ ul {
   display: flex;
 }
 
+.wrapper-for-comments ul {
+  display: block;
+}
+
+.wrapper-for-comments ul li {
+  color: red;
+}
+
 .wrapper-for-icons {
-	display: flex;
+  display: flex;
 }
 
 .wrapper-for-icons span {
-	font-size: 18px;
-	margin-left: 10px;
-	display: inline-flex;
-
+  font-size: 18px;
+  margin-left: 10px;
+  display: inline-flex;
 }
 
 .likeButton {
-	cursor: pointer;
-	display: inline-flex;
+  cursor: pointer;
+  display: inline-flex;
 }

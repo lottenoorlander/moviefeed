@@ -3,36 +3,35 @@ import PropTypes from "prop-types";
 
 class Comment extends Component {
   state = {
-    comment: ""
+    comment: []
   };
 
-  handleSubmit(event) {
-    event.preventDefault();
-    this.props.addComment(this.state.comment);
-    // console.log(`Submitting form... ${this.state.comment}`);
-  }
-
   handleChange = event => {
-    // console.log(`handleChange ${this.state.comment}`);
+    console.log(event.target.value);
 
     this.setState({
-      [event.target.comment]: event.target.value
+      comment: event.target.value
     });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+
+    console.log("submitting", this.state.comment);
+    this.props.addComment(this.state.comment);
+    this.setState({ comment: [] });
   };
 
   render() {
     return (
       <div className="comment">
         <form onSubmit={this.handleSubmit.bind(this)}>
-          <label>
-            Comment:
-            <input
-              type="text"
-              comment="comment"
-              onChange={this.handleChange.bind(this)}
-              value={this.state.comment}
-            />
-          </label>
+          <label>Comment: </label>
+          <input
+            type="text"
+            onChange={this.handleChange.bind(this)}
+            value={this.state.comment}
+          />
           <input type="submit" value="Add" />
         </form>
       </div>

@@ -21,9 +21,6 @@ class Card extends Component {
 
           <span>{this.props.releaseDate}</span>
         </div>
-        <div className="like">
-          <Likes />
-        </div>
       </div>
     );
   }

@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import HeartFilled from "../images/heart-filled.svg";
 import HeartOutline from "../images/heart-outline.svg";
 import Comment from "./Comment";
+import "../Comment.css";
 
 export default class Likes extends Component {
   state = {
     numLikes: 0,
-    liked: false
+    liked: false,
+    comments: []
   };
 
   increment = () => {
@@ -23,8 +25,13 @@ export default class Likes extends Component {
     });
   };
 
+  addComment = comment => {
+    console.log("Hi from scoreboard again, player:", comment);
+    const newComment = comment;
+    this.setState({ comments: this.state.comments.concat(newComment) });
+  };
+
   render() {
-    // console.log(this.state);
     return (
       <div className="wrapper-for-icons">
         {this.state.liked ? (
@@ -43,7 +50,14 @@ export default class Likes extends Component {
           />
         )}
         <span>{this.state.numLikes}</span>
-        <Comment addComment={this.addComment} />
+        <div className="wrapper-for-comments">
+          <ul>
+            {" "}
+            <li>{this.state.comments}</li>{" "}
+          </ul>
+
+          <Comment addComment={this.addComment} />
+        </div>
       </div>
     );
   }
